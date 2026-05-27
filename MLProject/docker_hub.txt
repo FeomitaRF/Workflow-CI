@@ -1,0 +1,16 @@
+Tautan Docker Hub model image:
+
+https://hub.docker.com/r/feomitaramadhanyfudiansah/breast-cancer-mlflow-model
+
+Docker Hub Username:
+feomitaramadhanyfudiansah
+
+Docker Hub Repository:
+feomitaramadhanyfudiansah/breast-cancer-mlflow-model
+
+Image tag yang dibuat workflow:
+- feomitaramadhanyfudiansah/breast-cancer-mlflow-model:latest
+- feomitaramadhanyfudiansah/breast-cancer-mlflow-model:<GITHUB_SHA>
+
+Keterangan:
+Image Docker ini dibuat otomatis melalui GitHub Actions menggunakan MLflow Project dan dipush ke Docker Hub.
