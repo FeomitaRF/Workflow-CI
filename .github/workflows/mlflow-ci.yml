@@ -13,7 +13,7 @@ permissions:
 
 env:
   PYTHON_VERSION: "3.12.7"
-  DOCKERHUB_USERNAME: "muhyusufarhman"
+  DOCKERHUB_USERNAME: "feomitaramadhanyfudiansah"
   MODEL_REPOSITORY_NAME: "breast-cancer-mlflow-model"
   MLFLOW_TRACKING_URI: "file:${{ github.workspace }}/MLProject/mlruns"
 
@@ -82,7 +82,7 @@ jobs:
           username: ${{ env.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Tag Docker Image
+      - name: Tag Docker Image as latest
         if: github.event_name != 'pull_request'
         run: |
           docker tag "$IMAGE_NAME" "${{ env.DOCKERHUB_USERNAME }}/${{ env.MODEL_REPOSITORY_NAME }}:latest"
